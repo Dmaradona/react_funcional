@@ -1,10 +1,10 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
 
-  const [ numero, setNumero ] = useState('');
-  const [ numero2, setNumero2 ] = useState('');
-  const [ resultado, setResultado] = useState('');
+  const [ numero, setNumero ] = useState();
+  const [ numero2, setNumero2 ] = useState();
+  const [ resultado, setResultado] = useState();
   /* OBJETO STATE
   const [ state, setState ] = useState({
     numero: 1,
@@ -19,23 +19,6 @@ function App() {
     const numeroFormatado2 = parseInt(numero2);
     setResultado(numeroFormatado1 + numeroFormatado2);
   }
-
-  /* EXECUTANDO COMO COMPONENTE DIDMOUNT */
-  /* EXECUTA QUANDO MODIFICADO A VAR NO SEGUNDO PARAMETRO 
-  useEffect( () => {
-    console.log('variável numero:', numero);
-  }, [numero] );*/
-
-  
-  /* EXECUTA AO CARREGAR A PÁGINA 
-  useEffect( () => {
-    console.log('variável numero:', numero);
-  }, [] );*/
-
-  /* EXECUTA AO ALTERAR O VALOR DE QUALQUER VAR */
-  useEffect( () => {
-    console.log('variável numero:', numero);
-  });
 
   return (
     <div> 
